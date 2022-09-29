@@ -1,6 +1,5 @@
 <template>
   <header-comp />
-  <button class="danger">Test</button>
   <router-view />
 </template>
 
