@@ -1,0 +1,49 @@
+@import "https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap";
+@import "./var.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+button {
+  border: 0;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #e7e7e7;
+  &.success {
+    color: #fff;
+    background-color: $green;
+    &:hover {
+      background-color: lighten($green, 10%);
+    }
+  }
+  &.danger {
+    color: #fff;
+    background-color: $red;
+    &:hover {
+      background-color: lighten($red, 10%);
+    }
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+input, textarea{
+  &:focus{
+    outline: 0;
+  }
+}

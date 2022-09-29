@@ -1,0 +1,143 @@
+@import "../var.scss";
+
+.header {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  &__top {
+    padding: 10px 0;
+    background-color: lighten($green, 5%);
+  }
+  &__menu {
+    display: flex;
+    a {
+      color: #fff;
+      margin: 0px 15px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    li {
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+  &__phone {
+    color: #fff;
+    margin-left: 20px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__socials {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    a {
+      display: flex;
+      margin: 0px 5px;
+      align-items: center;
+      padding: 0px 2px;
+      border-radius: 5px;
+      &:hover i {
+        filter: unset;
+      }
+      i {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+  &__bottom {
+    padding: 20px 0;
+    background-color: $green;
+    .container {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__logo {
+    display: flex;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    align-items: center;
+    margin-right: 30px;
+    img {
+      width: 80px;
+      margin-right: 10px;
+    }
+  }
+  &__form{
+    flex: 1;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #fff;
+    input{
+      flex: 1;
+      border: 0;
+      background: unset;
+      padding: 0px 10px;
+    }
+  }
+  &__search{
+    background-color: $yellow;
+  }
+  &__links{
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+    a{
+      padding: 10px;
+      display: flex;
+      margin: 0px 3px;
+      align-items: center;
+      border-radius: 5px;
+      &:hover{
+        background-color: $yellow;
+        i{
+          filter: invert(1);
+        }
+      }
+      i{
+        color: #fff;
+      }
+    }
+  }
+  &__catbtn {
+    color: $green;
+    font-weight: 600;
+    margin-right: 30px;
+    background-color: #fff;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    &:hover {
+      background-color: $yellow;
+    }
+    span {
+      height: 2px;
+      width: 13px;
+      margin-right: 10px;
+      position: relative;
+      background-color: $green;
+      &::before,
+      &::after {
+        left: 0;
+        top: -5px;
+        content: "";
+        width: 13px;
+        height: 1.5px;
+        position: absolute;
+        // display: inline-block;
+        background-color: $green;
+      }
+      &::after{
+        top: 6px;
+        width: 6px;
+      }
+    }
+  }
+}

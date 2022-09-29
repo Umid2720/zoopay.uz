@@ -1,0 +1,15 @@
+$green: #006b44;
+$yellow: #ffeb6f;
+$red: #e53935;
+
+@mixin bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@mixin fb($w) {
+  width: $w;
+  max-width: $w;
+  flex-basis: $w;
+}
