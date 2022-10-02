@@ -1,16 +1,19 @@
 <template>
   <div class="home">
+    <search-box />
     <category-list />
   </div>
 </template>
 
 <script>
-import CategoryList from '@/components/CategoryList.vue'
+import CategoryList from "@/components/CategoryList.vue";
+import SearchBox from "@/components/SearchBox.vue";
 
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
-    CategoryList
-  }
-}
+    CategoryList,
+    SearchBox,
+  },
+};
 </script>

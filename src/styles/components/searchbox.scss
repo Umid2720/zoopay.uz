@@ -1,0 +1,58 @@
+@import "../var.scss";
+
+.search {
+  padding: 30px 0;
+  background-color: #f3f3f3;
+  &__result {
+    left: 0;
+    top: 100%;
+    z-index: 2;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    overflow: auto;
+    max-height: 220px;
+    position: absolute;
+    flex-direction: column;
+    background-color: #fff;
+    a{
+        color: #000;
+        display: flex;
+        padding: 6px;
+        font-size: 16px;
+        font-weight: 500;
+        border-bottom: 1px solid #e7e7e7;
+        &:hover{
+            background-color: #e7e7e7;
+        }
+    }
+  }
+  &__form {
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+    align-items: center;
+    background-color: #fff;
+    input {
+      flex: 1;
+      border: 0;
+      padding: 15px;
+      font-size: 16px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+  }
+  &__btn {
+    padding: 15px 20px;
+    background-color: $green;
+    i {
+      color: #fff;
+    }
+    &:hover {
+      background-color: $yellow;
+    }
+    &:hover i {
+      color: #000;
+    }
+  }
+}

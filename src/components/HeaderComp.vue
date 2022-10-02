@@ -43,12 +43,6 @@
           <span></span>
           Категории
         </button>
-        <div class="header__form">
-          <input type="text" class="header__input" placeholder="Поиск" />
-          <button class="header__search">
-            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-          </button>
-        </div>
         <div class="header__links">
           <router-link to="/" class="header__link">
             <i class="fa-regular fa-message"></i>
@@ -60,6 +54,7 @@
             <i class="fa-regular fa-user"></i>
           </router-link>
         </div>
+        <router-link to='/' class="header__add">Добавить обявление</router-link>
       </div>
     </div>
   </header>

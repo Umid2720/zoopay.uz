@@ -69,25 +69,20 @@
       margin-right: 10px;
     }
   }
-  &__form{
-    flex: 1;
-    display: flex;
+  &__add{
+    color: $green;
+    font-weight: 600;
+    margin-left: 20px;
+    padding: 10px 20px;
     border-radius: 5px;
-    align-items: center;
     background-color: #fff;
-    input{
-      flex: 1;
-      border: 0;
-      background: unset;
-      padding: 0px 10px;
+    &:hover{
+      background-color: $yellow;
     }
-  }
-  &__search{
-    background-color: $yellow;
   }
   &__links{
     display: flex;
-    margin-left: 30px;
+    margin-left: auto;
     align-items: center;
     a{
       padding: 10px;
