@@ -2,6 +2,7 @@
 import search from "./modules/search";
 import { createStore } from "vuex";
 import category from "./modules/category";
+import adshome from "./modules/adshome";
 
 export default createStore({
   state: {
@@ -16,6 +17,7 @@ export default createStore({
   actions: {},
   modules: {
     category,
-    search
+    search,
+    adshome
   },
 });
