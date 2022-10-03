@@ -13,9 +13,21 @@
           <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
         </button>
         <div class="search__result" v-show="results.length > 0">
-          <router-link to="/" v-for="result of results" :key="result._id">{{
-            result.title
-          }}</router-link>
+          <router-link to="/" v-for="result of results" :key="result._id">
+            <span
+              class="search__img"
+              :style="{
+                backgroundImage: 'url(' + `${uri}/${result.photo}` + ')',
+              }"
+            ></span>
+            {{ result.title }}
+            <span class="search__price">
+              {{ result.price.length > 1 ? result.price : "договорная цена" }}
+              <span v-show="result.price.length > 1">
+                {{ result.currency ? "$" : сум }}
+              </span>
+            </span>
+          </router-link>
         </div>
       </div>
     </div>
@@ -33,12 +45,14 @@ export default {
     results() {
       return this.$store.getters.getResults;
     },
+    uri() {
+      return this.$store.getters.getUri;
+    },
   },
   methods: {
     search() {
       if (this.title.length > 0) this.$store.dispatch("search", this.title);
-      else
-        this.$store.dispatch('clear')
+      else this.$store.dispatch("clear");
     },
   },
 };

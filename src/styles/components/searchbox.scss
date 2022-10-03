@@ -3,6 +3,15 @@
 .search {
   padding: 30px 0;
   background-color: #f3f3f3;
+  &__img{
+    width: 30px;
+    height: 30px;
+    @include bg;
+    margin-right: 20px;
+  }
+  &__price{
+    margin-left: auto;
+  }
   &__result {
     left: 0;
     top: 100%;
@@ -15,6 +24,7 @@
     position: absolute;
     flex-direction: column;
     background-color: #fff;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
     a{
         color: #000;
         display: flex;
